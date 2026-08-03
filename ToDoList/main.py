@@ -31,7 +31,7 @@ class MainWindow(QMainWindow):
                     self.ui.new_task_descryption.setText("")
                 else:
                     msg_box = QMessageBox()
-                    msg_box.setText("An error accured!")
+                    msg_box.setText("An error occurred!")
                     msg_box.exec()
             else:
                 msg_box = QMessageBox()
@@ -65,7 +65,7 @@ class MainWindow(QMainWindow):
                 widget.deleteLater()
         else:
             msg_box = QMessageBox()
-            msg_box.setText("An error accured!")
+            msg_box.setText("An error occurred!")
             msg_box.exec()
             
     def toggle_task_status(self, id, cb, label, btn, o):
